@@ -18,7 +18,12 @@ export default function Butones() {
 
         <Text style={styles.text}>Boton Icono</Text>
     </TouchableOpacity>
+    {/* Boton 3 */}
+<TouchableOpacity style={styles.botonIcono}>
+        <Ionicons name="rocket" size={20} color="red" />
 
+        <Text style={styles.text}>Boton Icono</Text>
+    </TouchableOpacity>
       <ExpoStatusBar style="auto" />
     </View>
   );
@@ -39,7 +44,7 @@ const styles = StyleSheet.create({
     padding:12,
     borderRadius:50,
     marginTop:10,
-    // marginbutton:10,
+    marginBottom:10,
 },
 text:{
 color:'#000000',
