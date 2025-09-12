@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hola Mundo</Text>
+      <Text style={styles.holamundo}>Hola Mundo</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -13,8 +13,16 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#ebe8a1ff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  holamundo: {
+    fontSize: 58,
+    color: '#000000',
+    borderRadius:80,
+    backgroundColor:'#efefefff',
+    padding:20,
+    
   },
 });
