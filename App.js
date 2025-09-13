@@ -5,6 +5,7 @@ import Butones from './src/pages/Butones';
 import ButonesV2 from './src/pages/ButonesV2';
 import HomePrincipal from './src/pages/HomePrincipal';
 import Formulario from './src/pages/Formulario';
+import FormularioV2 from './src/pages/FormularioV2';
 
 export default function App() {
   return (
@@ -12,8 +13,8 @@ export default function App() {
     // <Butones />
     //  <ButonesV2/>
     // <HomePrincipal/> 
-    <Formulario />
-
+    // <Formulario />
+    <FormularioV2 />
   );
 }
 
