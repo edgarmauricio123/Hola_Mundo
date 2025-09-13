@@ -1,11 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image } from 'react-native';
-import Home from './src/pages/Home';
-import Butones from './src/pages/Butones';
-import ButonesV2 from './src/pages/ButonesV2';
-import HomePrincipal from './src/pages/HomePrincipal';
-import Formulario from './src/pages/Formulario';
-import FormularioV2 from './src/pages/FormularioV2';
+import ListaAlumnos from './src/pages/Lista-Alumnos/ListaAlumnos';
 
 export default function App() {
   return (
@@ -14,7 +8,8 @@ export default function App() {
     //  <ButonesV2/>
     // <HomePrincipal/> 
     // <Formulario />
-    <FormularioV2 />
+    // <FormularioV2 />
+    <ListaAlumnos />
   );
 }
 
