@@ -10,8 +10,10 @@ export default function App() {
       // <Home />
     // <Butones />
   //  <ButonesV2/>
-<HomePrincipal/>
-  );
+  <HomePrincipal/> 
+  
+
+);
 }
 
 const styles = StyleSheet.create({
