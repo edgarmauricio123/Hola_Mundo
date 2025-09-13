@@ -9,13 +9,17 @@ export default function FormularioV2() {
         <SafeAreaView style={styles.main}>
             <ScrollView>
                 <Text style={styles.title}>Formulario V2</Text>
+
                 <View style={styles.container}>
+                    <TouchableOpacity style={styles.cerrarBoton}>
+                        <Ionicons name="close" size={20} color="white" />
+                    </TouchableOpacity>
                     <Image style={styles.avatar} source={{ uri: 'https://imgs.search.brave.com/P0iwyPn688FcKp4RYILwKziBsn3t9mliMzdz_NeZsko/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9h/bmRyb2d5bm91cy1h/dmF0YXItbm9uLWJp/bmFyeS1xdWVlci1w/ZXJzb25fMjMtMjE1/MTEwMDIyNi5qcGc_/c2VtdD1haXNfaW5j/b21pbmcmdz03NDAm/cT04MA' }} />
                     <Text style={styles.name}>Edgar Mauricio</Text>
                     <View style={styles.infocontainer}>
-                          <Text style={styles.label}>Carrera</Text>
+                        <Text style={styles.label}>Carrera</Text>
                         <Text style={styles.info}>Sistemas Computacionales</Text>
-                          <Text style={styles.label}>Especialdad</Text>
+                        <Text style={styles.label}>Especialdad</Text>
                         <Text style={styles.info}>Desarrollo de software</Text>
                         <Text style={styles.label}>Correo</Text>
                         <Text style={styles.info}>Edgar@Mauricio.com</Text>
@@ -77,7 +81,7 @@ const styles = StyleSheet.create({
         padding: 5,
         width: '55%',
         textAlign: 'center',
-     
+
 
     },
     infocontainer: {
@@ -116,5 +120,17 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
         fontSize: 16,
+    },
+    cerrarBoton: {
+        position: 'absolute',
+        top: 15,
+        right: 15,
+        borderRadius: 50,
+        backgroundColor: '#362f2fff',
+        width: 30,
+        height: 30,
+        alignItems: 'center',
+        justifyContent: 'center',
+        elevation: 5,
     },
 });
