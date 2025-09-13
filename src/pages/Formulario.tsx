@@ -11,6 +11,10 @@ export default function Formulario() {
             <TextInput style={styles.input} placeholder='Escribe tu nombre' />
             <Text style={styles.label}>Descripción</Text>
             <TextInput multiline={true} numberOfLines={4} style={[styles.input, styles.textarea]} placeholder='Describe personalidad' />
+            <Text style={styles.label}>Correo Electronico</Text>
+            <TextInput style={styles.input} placeholder='Escribe tu correo electronico' keyboardType='email-address' />
+            <Text style={styles.label}>Contraseña</Text>
+            <TextInput style={styles.input} placeholder='**********' secureTextEntry />
         </SafeAreaView>
     );
 }
