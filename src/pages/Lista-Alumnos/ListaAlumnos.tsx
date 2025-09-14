@@ -19,16 +19,20 @@ export default function ListaAlumnos() {
             {/* Inicio de contenido(Lista de alumnos) */}
             <ScrollView style={{ padding: 16 }}>
                 <Text style={styles.sectionTitle}>Alumnos de Aplicaciones Moviles</Text>
-                <View style={styles.card}>
-                    <Image style={styles.avatar} source={{ uri: 'https://imgs.search.brave.com/P0iwyPn688FcKp4RYILwKziBsn3t9mliMzdz_NeZsko/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9h/bmRyb2d5bm91cy1h/dmF0YXItbm9uLWJp/bmFyeS1xdWVlci1w/ZXJzb25fMjMtMjE1/MTEwMDIyNi5qcGc_/c2VtdD1haXNfaW5j/b21pbmcmdz03NDAm/cT04MA' }} />
-                    <View style={styles.cardInfo}>
-                        <Text style={styles.UserName}>Edgar Mauricio</Text>
-                        <Text style={styles.UserDetails}>Ing. Sistemas Computacionales</Text>
-                        <TouchableOpacity style={styles.saveButton}>
-                            <Text style={styles.saveButtonText}>Ver mas</Text>
-                        </TouchableOpacity>
+               
+                {/* Card de alumno */}
+             {[1,2,3,4,5,6,7,8,9,10].map((index) => (
+                    <View key={index} style={styles.card}>
+                        <Image style={styles.avatar} source={{ uri: 'https://imgs.search.brave.com/P0iwyPn688FcKp4RYILwKziBsn3t9mliMzdz_NeZsko/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9h/bmRyb2d5bm91cy1h/dmF0YXItbm9uLWJp/bmFyeS1xdWVlci1w/ZXJzb25fMjMtMjE1/MTEwMDIyNi5qcGc_/c2VtdD1haXNfaW5j/b21pbmcmdz03NDAm/cT04MA' }} />
+                        <View style={styles.cardInfo}>
+                            <Text style={styles.UserName}>Edgar Mauricio</Text>
+                            <Text style={styles.UserDetails}>Ing. Sistemas Computacionales</Text>
+                            <TouchableOpacity style={styles.saveButton}>
+                                <Text style={styles.saveButtonText}>Ver mas</Text>
+                            </TouchableOpacity>
+                        </View>
                     </View>
-                </View>
+                ))}
                 
             </ScrollView>
             {/* Cierre de contenido */}
