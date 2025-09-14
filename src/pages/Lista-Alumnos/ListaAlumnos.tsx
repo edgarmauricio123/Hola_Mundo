@@ -29,6 +29,7 @@ export default function ListaAlumnos() {
                         </TouchableOpacity>
                     </View>
                 </View>
+                
             </ScrollView>
             {/* Cierre de contenido */}
         </SafeAreaView>
@@ -69,15 +70,20 @@ const styles = StyleSheet.create({
         marginBottom: 5,
     },
     cardInfo: {
-
-
+        flex:1,
+        justifyContent: 'center',
     },
     UserName: {
+        fontWeight: 'bold',
+        fontSize: 16,
+        marginBottom: 10,
 
     },
     UserDetails: {
-
-
+        fontWeight: 'bold',
+        fontSize: 14,
+        marginBottom: 10,
+        
     },
     avatar: {
         width: 60,
@@ -86,9 +92,17 @@ const styles = StyleSheet.create({
         marginRight: 12,
     },
     saveButton: {
+        backgroundColor: '#0044ffff',
+        marginTop: 15,       
+        paddingVertical: 6,
+        borderRadius: 40,
+        alignSelf: 'flex-end',
+        padding:15
 
     },
     saveButtonText: {
+        color: 'white',
+        fontWeight: 'bold',
 
     },
 
